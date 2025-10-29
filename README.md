@@ -3,7 +3,7 @@ Spring MVC is a web framework based on the Model–View–Controller (MVC) archi
 In this project, we’ll develop a Spring MVC application that interacts with MySQL to find doctor details online. It uses Spring JDBC for database interaction and follows a layered structure for maintainability.
 
 techonologies used :
-java
-spring mvc
-mysql
-maven
+java,
+spring mvc,
+mysql,
+maven.
