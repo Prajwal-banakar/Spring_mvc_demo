@@ -1,0 +1,29 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif; /* Change the font */
+    background-color: #f4f4f9; /* Light background color */
+    margin: 0;
+    padding: 0;
+}
+
+center {
+    /* Better to use a container div, but for now, style the center tag */
+    padding-top: 50px; /* Add some space from the top */
+}
+
+a {
+    text-decoration: none; /* Remove the default underline */
+    font-size: 24px; /* Make the text bigger */
+    color: #1a73e8; /* A professional blue color */
+    padding: 10px 20px; /* Padding inside the link */
+    border: 2px solid #1a73e8; /* A nice border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+a:hover {
+    background-color: #1a73e8; /* Blue background on hover */
+    color: white; /* White text on hover */
+    cursor: pointer;
+}
