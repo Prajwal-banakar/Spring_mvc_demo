@@ -14,13 +14,13 @@ public class DoctorDao {
     }
 
     public Doctor getDoctorsByName(String doctorName) throws SQLException {
-        String sql = "SELECT * FROM DoctorsDetails WHERE doctorName = ?";
+        String sql = "SELECT * FROM doctors WHERE name = ?";
         return template.queryForObject(sql, new Object[]{doctorName},
                 new BeanPropertyRowMapper<>(Doctor.class));
     }
 
     public Doctor getDoctorsByRegistrationNumber(String registrationNumber) throws SQLException {
-        String sql = "SELECT * FROM DoctorsDetails WHERE doctorRegistrationNumber = ?";
+        String sql = "SELECT * FROM doctors WHERE doctorRegistrationNumber = ?";
         return template.queryForObject(sql, new Object[]{registrationNumber},
                 new BeanPropertyRowMapper<>(Doctor.class));
     }

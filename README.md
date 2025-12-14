@@ -1,9 +1,45 @@
-Spring MVC is a web framework based on the Model–View–Controller (MVC) architectural pattern. It helps in building dynamic web applications by separating application logic, presentation and data access layers.
+# Spring MVC Find Doctors Online
 
-In this project, we’ll develop a Spring MVC application that interacts with MySQL to find doctor details online. It uses Spring JDBC for database interaction and follows a layered structure for maintainability.
+This is a Spring MVC application that allows users to search for doctors.
 
-techonologies used :
-java,
-spring mvc,
-mysql,
-maven.
+## Database Setup
+
+Before running the application, you need to set up the MySQL database.
+
+1.  **Create the database:**
+    ```sql
+    CREATE DATABASE spring;
+    ```
+
+2.  **Use the database:**
+    ```sql
+    USE spring;
+    ```
+
+3.  **Create the `doctors` table:**
+    ```sql
+    CREATE TABLE doctors (
+        id INT NOT NULL AUTO_INCREMENT,
+        name VARCHAR(255) NOT NULL,
+        specialty VARCHAR(255) NOT NULL,
+        PRIMARY KEY (id)
+    );
+    ```
+
+4.  **Insert some sample data (optional):**
+    ```sql
+    INSERT INTO doctors (name, specialty) VALUES ('Dr. John Doe', 'Cardiologist');
+    INSERT INTO doctors (name, specialty) VALUES ('Dr. Jane Smith', 'Dermatologist');
+    ```
+
+## Running the application
+
+Once the database is set up, you can run the application using Maven.
+
+1.  **Build the project:**
+    ```bash
+    mvn clean install
+    ```
+
+2.  **Run the application:**
+    You can deploy the generated WAR file to a servlet container like Tomcat.
